@@ -56,7 +56,7 @@ function SingleCountryMarkup(data) {
   const singleCountry = data
     .map(({ flags, name, capital, population, languages }) => {
       const languageString = Object.values(languages).join(', ');
-      return `<p class="country-main"><img src="${flags.svg}" alt="${flags.alt}" width="70" height="auto"/><span class="country-name">${name.official}</span></p>
+      return `<p class="country-main"><img src="${flags.svg}" alt="${flags.alt}" width="300" height="auto"/><span class="country-name">${name.official}</span></p>
       <p class="parameter-name">Capital: <span class="parameter-value">${capital}</span></p>
       <p class="parameter-name">Poplulation: <span class="parameter-value">${population}</span></p>
       <p class="parameter-name">Languages: <span class="parameter-value">${languageString}</span></p>`;
@@ -70,7 +70,7 @@ function SingleCountryMarkup(data) {
 function MultipleCountriesMarkup(data) {
   const multipleCountries = data
     .map(({ flags, name }) => {
-      return `<li class="country-list"> <img src="${flags.svg}" alt="${flags.alt}" width="40" height="auto"><span class="country-list-name">${name.official}</span> </li>`;
+      return `<li class="country-list-item"> <img src="${flags.svg}" alt="${flags.alt}" width="150" height="auto"><span class="country-list-name">${name.official}</span> </li>`;
     })
     .join(``);
   refs.list.innerHTML = multipleCountries;

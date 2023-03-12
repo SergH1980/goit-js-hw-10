@@ -33,11 +33,12 @@ body {
 .country-name {
   font-weight: 500;
   margin-left: 30px;
-  font-size: 30px;
+  font-size: 150px;
 }
 
 .parameter-name {
   font-weight: 700;
+  font-size: 75px;
 }
 
 .parameter-value {
@@ -46,10 +47,16 @@ body {
 }
 
 .country-list {
+  padding-top: 100px;
   list-style: none;
+}
+.country-list-item {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
 }
 
 .country-list-name {
   margin-left: 10px;
-  font-size: 20px;
+  font-size: 60px;
 }
